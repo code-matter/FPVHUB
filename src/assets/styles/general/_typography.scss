@@ -1,0 +1,101 @@
+body,
+textarea {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    font-weight: 400;
+    color: nth($grey, 11);
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 36px;
+
+    @include phone {
+        font-size: 32px;
+    }
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 26px;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+h4 {
+    font-weight: 800;
+    font-size: 14px;
+}
+
+a {
+    font-weight: 700;
+    color: nth($grey, 8);
+    transition: all 0.2s ease;
+    text-decoration: none;
+
+    &:hover {
+        color: nth($grey, 8);
+        opacity: 0.8;
+    }
+
+    &.locale {
+        text-transform: capitalize;
+        color: $mc;
+        color: $link;
+    }
+}
+
+b {
+    font-weight: 800;
+}
+
+small {
+    font-size: 11px;
+}
+
+button,
+label {
+    font-weight: 800;
+    font-size: 14px;
+}
+
+span.ant-tag {
+    font-weight: 800;
+    font-size: 14px;
+}
+
+input,
+.ant-input {
+    font-weight: 500;
+    width: 100%;
+}
+
+.ant-select {
+    width: 100%;
+
+    input,
+    .ant-select-selector,
+    .ant-select-selection-item {
+        font-weight: 500;
+    }
+}
+
+.ant-picker {
+    width: 100%;
+
+    .ant-picker-input {
+        flex-direction: row-reverse;
+    }
+
+    .ant-picker-suffix {
+        margin-inline-end: 8px;
+    }
+}
+
+.ant-breadcrumb {
+    text-transform: capitalize;
+}
